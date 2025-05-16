@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papeleta de Permiso</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Detalles de la Papeleta</h1>
+    <div id="contenido"></div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const numeroPapeleta = urlParams.get('papeleta');
+        
+        // Aquí puedes agregar lógica para mostrar los datos de la papeleta
+        document.getElementById('contenido').innerHTML = `Número de Papeleta: ${numeroPapeleta}`;
+    </script>
+</body>
+</html>
